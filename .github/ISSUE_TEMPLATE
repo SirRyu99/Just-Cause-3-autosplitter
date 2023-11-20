@@ -5,6 +5,8 @@ Just replace the text below the Titels (Titels are the text with the ** around t
      - Splits at the wrong time.
      - Fails to split when it should.
      - Causes the game timer to stop or not stop when expected.
+   -Add the fitting tags to the issue
+   -Add a fitting Title
 
 2. **Provide Details:**
    - Clearly describe the bug, specifying whether it involves incorrect splits or timer issues.
