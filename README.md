@@ -4,7 +4,7 @@ For some reason, I decided to create an autosplitter for Just Cause 3 (JC3). Aft
 
 ## How to set it up:
 
-Either go to your splits in LiveSplit and just click "activate," or if you want to download it manually, follow the steps below:
+Either go to your splits in LiveSplit and just click "activate", or if you want to download it manually, follow the steps below:
 
 1. Copy the `JC3-LoadRemover` folder to your LiveSplit's "Components" folder.
 2. Open LiveSplit and right-click on the timer.
