@@ -1,6 +1,6 @@
 # JC3-Autosplitter and Load Remover
 
-For some reason, I decided to create an autosplitter for Just Cause 3 (JC3). After about 100 hours of finding addresses, writing code, and testing the script, I'm ready to share it. The included load remover allows you to record your game time without loads and, in this new version, also stops running when the game is not active.
+For some reason, I decided to create an autosplitter for Just Cause 3 (JC3). After about 100 hours of finding addresses, writing code, and testing the script, I'm ready to share it. The included load remover allows you to record your game time without loads and, in this new version, also stops running when the game is not running/is closed.
 
 ## How to set it up:
 
