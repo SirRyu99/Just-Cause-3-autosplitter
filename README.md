@@ -4,7 +4,7 @@ For some reason, I decided to create an autosplitter for Just Cause 3 (JC3). Aft
 
 ## How to set it up:
 
-Either go to your splits in livesplit and just klick aktivate or if you want to download it manualy follow the steps below:
+Either go to your splits in LiveSplit and just click "activate," or if you want to download it manually, follow the steps below:
 
 1. Copy the `JC3-LoadRemover` folder to your LiveSplit's "Components" folder.
 2. Open LiveSplit and right-click on the timer.
@@ -34,7 +34,7 @@ These steps should enable the JC3-Autosplitter for you.
 - It doesn’t split when you complete a daredevil jump.
 - If you kill Di Ravello or interact with the trigger at the end of the Sky Fortress DLC, you have to split manually because the autosplitter will split after you exit the mission.
 - It does not split Mister Snowman or other secret/easter egg runs.
-- When you start it, it takes 10 seconds before the splitting and the load remover become active. This is due to if you restart the game in 100%, the game spits out random values which would make the autosplitter split falsely.
+- When you start the game or start livesplit while the game is running, it takes 10 seconds before the splitting and the load remover become active. This is due to if you restart the game in 100%, the game spits out random values which would make the autosplitter split falsely.
 
 ## Currently known bugs:
 
@@ -44,3 +44,4 @@ These steps should enable the JC3-Autosplitter for you.
 
 - Including "autostart" and "autorestart."
 - The possibility to disable some of the autosplit functions. For example, turning off splitting on collectibles.
+
