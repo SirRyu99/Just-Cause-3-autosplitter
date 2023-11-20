@@ -6,7 +6,7 @@ For some reason, I decided to create an autosplitter for Just Cause 3 (JC3). Aft
 
 Either go to your splits in LiveSplit and just click "activate", or if you want to download it manually, follow the steps below:
 
-1. Copy the `JC3-AutosplitterRyu.asl` folder to your LiveSplit's "Components" folder.
+1. Copy the `JC3-AutosplitterRyu.asl` file to your LiveSplit's "Components" folder.
 2. Open LiveSplit and right-click on the timer.
 3. Select "Edit Layout..."
 4. Click on the plus sign to add a new component.
