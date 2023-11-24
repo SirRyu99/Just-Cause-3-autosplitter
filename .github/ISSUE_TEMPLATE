@@ -1,12 +1,12 @@
 Just replace the text below the Titels (Titels are the text with the ** around them)
 
+Before reporting a new bug, check if the issue has already been reported in the https://github.com/SirRyu99/Just-Cause-3-autosplitter/issues section.
+
 1. **Define the Bug:**
    - A bug could include instances where the autosplitter:
      - Splits at the wrong time.
      - Fails to split when it should.
      - Causes the game timer to stop or not stop when expected.
-   -Add the fitting tags to the issue
-   -Add a fitting Title
 
 2. **Provide Details:**
    - Clearly describe the bug, specifying whether it involves incorrect splits or timer issues.
@@ -26,3 +26,5 @@ Just replace the text below the Titels (Titels are the text with the ** around t
 
 6. **Additional Information:**
    - Include any additional information that might be relevant to the bug.
+   - Add the fitting tags to the issue.
+   - Add a fitting Title.
