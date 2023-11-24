@@ -14,14 +14,14 @@ Before reporting a new bug, check if the issue has already been reported in the 
    - Specify the platform and environment (e.g., Windows, macOS, Linux).
 
 3. **Reproduce the Bug:**
-   - If possible, provide steps to reproduce the bug. This helps me understand the context of the issue.
+   - If possible, provide steps to reproduce the bug.
 
 4. **Video Footage (Mandatory):**
    - Record a video footage demonstrating the bug.
    - This is not optional as it helps a lot reproducing the issue.
 
 5. **Debugging Tools:**
-   - Use the debugging tools provided in the [LiveSplit.AutoSplitters README](https://github.com/LiveSplit/LiveSplit.AutoSplitters/blob/master/README.md#debugging) to gather additional information.
+   - If you want to help me even more the debugging tools provided in the [LiveSplit.AutoSplitters README](https://github.com/LiveSplit/LiveSplit.AutoSplitters/blob/master/README.md#debugging) can be used to gather additional information.
    - Within the tool DebugView, you can search for "JC3" to filter and only get relevant results.
 
 6. **Additional Information:**
