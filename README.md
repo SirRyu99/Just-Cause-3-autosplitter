@@ -15,6 +15,7 @@ Either go to your splits in LiveSplit and just click "activate", or if you want 
 7. Locate your JC3-LoadRemover script file `JC3-AutosplitterRyu.asl` in the "Components" folder within LiveSplit.
 
 These steps should enable the JC3-Autosplitter for you.
+!!!IMPORTANT:Do not perform both actions! Otherwise, it will split twice on every split!!!
 
 ## Additional options:
 
