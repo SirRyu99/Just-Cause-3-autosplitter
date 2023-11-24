@@ -3,7 +3,7 @@
 If you encounter any issues or unexpected behavior while using JC3-Autosplitter, please follow these steps to report the bug. This will help me address the issue more efficiently:
 
 1. **Check Existing Issues:**
-   - Before reporting a new bug, check if the issue has already been reported in the [GitHub Issues](https://github.com/SirRyu99/Just-Cause-3-autosplitter/issues) section.
+   - Before reporting a new bug, check if the issue has already been reported in the https://github.com/SirRyu99/Just-Cause-3-autosplitter/issues section.
 
 2. **Define the Bug:**
    - A bug could include instances where the autosplitter:
@@ -20,11 +20,11 @@ If you encounter any issues or unexpected behavior while using JC3-Autosplitter,
    - If possible, provide steps to reproduce the bug. This helps me understand the context of the issue.
 
 5. **Video Footage (Mandatory):**
-   - Record a video footage demonstrating the bug.
-   - This is not optional and is necessary for a comprehensive understanding of the issue.
+   - Record a video demonstrating the bug.
+   - This is not optional as it helps a lot reproducing the issue.
 
 6. **Debugging Tools:**
-   - Use the debugging tools provided in the [LiveSplit.AutoSplitters README](https://github.com/LiveSplit/LiveSplit.AutoSplitters/blob/master/README.md#debugging) to gather additional information.
+   - Use the debugging tools provided in the https://github.com/LiveSplit/LiveSplit.AutoSplitters/blob/master/README.md#debugging to gather additional information.
    - Within the tool DebugView, you can search for "JC3" to filter and only get relevant results.
 
 7. **Additional Information:**
