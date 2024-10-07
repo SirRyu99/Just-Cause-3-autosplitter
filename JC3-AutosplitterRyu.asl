@@ -113,6 +113,7 @@ update{
 }
 
 reset{
+	// Reset condition based on specific horizontal, height, and vertical coordinates
 	if(current.horizontal > 46.74738310 && current.horizontal < 46.74738314 && current.height < 1342 && current.height > 1336 && current.vertical < -28 && current.vertical > -30){
 		//print(" -------------------- JC3 reset " + current.vertical + " -------------------- ");
 		//print(" -------------------- JC3 reset " + current.height + " -------------------- ");
@@ -121,10 +122,11 @@ reset{
 }
 
 start{
+	// Start condition based on coordinates and mission status
 	if(46.851111 > current.horizontal && current.horizontal > 46.46326981 && current.vertical < -28.7 && current.vertical > -29 && current.height > 1340.281128 && current.height < 1341 && 0 < current.mission){
-		print(" -------------------- JC3 start " + current.vertical + " -------------------- ");
-		print(" -------------------- JC3 start " + current.height + " -------------------- ");
-		print(" -------------------- JC3 start " + current.horizontal + " -------------------- ");
+		//print(" -------------------- JC3 start " + current.vertical + " -------------------- ");
+		//print(" -------------------- JC3 start " + current.height + " -------------------- ");
+		//print(" -------------------- JC3 start " + current.horizontal + " -------------------- ");
 		return true;
 	}	
 	
