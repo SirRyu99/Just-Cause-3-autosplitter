@@ -1,22 +1,25 @@
 // Made by SirRyu
-// If you encounter any bugs with this autosplitter (game time pausing or not pausing when it should) then
-// Please reach out to me on the JC3-Speedrun Discord
-// Please provide video footage to help reproduce the bugs
+// Version 0.01.01
+// If you encounter any bugs with this autosplitter either
+// reach out to me on the JC3-Speedrun Discord
+// Or/and create an Issue here: https://github.com/SirRyu99/Just-Cause-3-autosplitter/issues
 
 state("JustCause3")
 {
     int gameloading : 0x2D5AE50;
 	int loading : 0x2F38848, 0x94;
 	int strangeLoading : 0x02F39138, 0xA0, 0x178;
-	int outposts : 0x02F36E30, 0x40, 0x0, 0x68, 0x0, 0x8;
-	int mission : 0x02F188D0, 0x324;
+	int outposts : 0x02F36E30, 0x40, 0x0, 0x68, 0x0, 0x8; //change of number
+	int mission : 0x02F188D0, 0x324; //1==true(in mission) 0==false(outside of mission)
 	int challange : 0x02F17E00, 0x820;
 	int challangewheel : 0x02F387F0, 0x100, 0x10, 0x168, 0x14;
-	int collectibles : "fmod_studio_F.dll", 0x004F2670, 0xA0, 0x18, 0x18, 0x28, 0x48, 0x28, 0x50, 0x10, 0x108;
+	int collectibles : "fmod_studio_F.dll", 0x004F2670, 0xA0, 0x18, 0x18, 0x28, 0x48, 0x28, 0x50, 0x10, 0x108; //first change of number then increase by 1 or 2
 	int church : "fmod_studio_F.dll", 0x004F2670, 0x118, 0xAF4;
-	int town : 0x02F34280, 0x28, 0x70, 0x8, 0x28, 0x60, 0x18, 0x1238, 0x108;
-	int resetRun : 0x2F17E9D;
-	int startRun : 0x02F2EFF0, 0x568;
+	int town : 0x02F163C8, 0x18, 0xC0, 0xE94; //2=true 1=false
+	int resetRun : 0x2F17E9D; //not working
+	int startRun : 0x02F2EFF0, 0x568; //not working
+
+	// old town pointer 0x02F34280, 0x28, 0x70, 0x8, 0x28, 0x60, 0x18, 0x1238, 0x108;
 	
 }
 
