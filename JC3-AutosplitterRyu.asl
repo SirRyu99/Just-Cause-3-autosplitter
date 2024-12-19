@@ -153,7 +153,13 @@ split{
 			vars.lastSplit = Environment.TickCount;
 			print(" JC3 - Town: Nacre ");
 			return true;
-			}	
+			}
+
+		if(Math.Abs(verticalshort - 198349) <= toleranceVertical && Math.Abs(horizontalshort - 199409) <= toleranceHorizontal && Math.Abs(heightshort - 1030) <= toleranceHeight){
+			vars.lastSplit = Environment.TickCount;
+			print(" JC3 - Town: Vico Platessa ");
+			return true;
+			}
 			
 		// Checks when the flag animation starts
 		// Old way as it didnt work for everyone
