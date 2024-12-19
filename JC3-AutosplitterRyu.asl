@@ -35,174 +35,267 @@ startup{
 
 split{
 
-	float verticalshort = (float)Math.Truncate((current.vertical+1000.0)*100);
-	float horizontalshort = (float)Math.Truncate((current.horizontal+1000.0)*100);
-	float heightshort = (float)Math.Truncate(current.height);
-		
-	float toleranceVertical = 5;
-	float toleranceHorizontal = 5;
-	float toleranceHeight = 5;
-	
-	
-	// checks if outposts triggert right before it so it doesn't splitt twice
-   	if(current.gamestate == 1 && old.gamestate != current.gamestate && ((Environment.TickCount - vars.lastSplit) > 5000)){
+    if(Environment.TickCount - vars.gameStart > 10000){
 
-		
-		print(" JC3 - Town: ");
-		print(" ------ JC3 vertical " + verticalshort + " ------ ");
-		print(" ------ JC3 horizontal " + horizontalshort + " ------ ");
-		print(" ------ JC3 height " + heightshort + " ------ ");
-		
-		if(Math.Abs(verticalshort - 196913) <= toleranceVertical && Math.Abs(horizontalshort - 205049) <= toleranceHorizontal && Math.Abs(heightshort - 1131) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Manaea ");
-			return true;
-			}
-		
-		if(Math.Abs(verticalshort - 198189) <= toleranceVertical && Math.Abs(horizontalshort - 204526) <= toleranceHorizontal && Math.Abs(heightshort - 1138) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Surpicco ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 198027) <= toleranceVertical && Math.Abs(horizontalshort - 200802) <= toleranceHorizontal && Math.Abs(heightshort - 1038) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Cinta ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 199489) <= toleranceVertical && Math.Abs(horizontalshort - 200371) <= toleranceHorizontal && Math.Abs(heightshort - 1031) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Vico Spigola ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 198941) <= toleranceVertical && Math.Abs(horizontalshort - 200516) <= toleranceHorizontal && Math.Abs(heightshort - 1112) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Soliana ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 199078) <= toleranceVertical && Math.Abs(horizontalshort - 199834) <= toleranceHorizontal && Math.Abs(heightshort - 1134) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Vinialetta ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 199592) <= toleranceVertical && Math.Abs(horizontalshort - 199644) <= toleranceHorizontal && Math.Abs(heightshort - 1033) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Vico Thunno ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 199547) <= toleranceVertical && Math.Abs(horizontalshort - 205301) <= toleranceHorizontal && Math.Abs(heightshort - 1029) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Perla Est ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 199171) <= toleranceVertical && Math.Abs(horizontalshort - 202231) <= toleranceHorizontal && Math.Abs(heightshort - 1189) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Agro Nove ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 199333) <= toleranceVertical && Math.Abs(horizontalshort - 202468) <= toleranceHorizontal && Math.Abs(heightshort - 1168) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Argo ");
-			return true;
-			}
-			
-		if(Math.Abs(verticalshort - 199283) <= toleranceVertical && Math.Abs(horizontalshort - 203134) <= toleranceHorizontal && Math.Abs(heightshort - 1059) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Vista Fonte ");
-			return true;
-			}
-		
-		if(Math.Abs(verticalshort - 199240) <= toleranceVertical && Math.Abs(horizontalshort - 204077) <= toleranceHorizontal && Math.Abs(heightshort - 1054) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Bellevia ");
-			return true;
-			}
-		
-		if(Math.Abs(verticalshort - 199517) <= toleranceVertical && Math.Abs(horizontalshort - 201219) <= toleranceHorizontal && Math.Abs(heightshort - 1043) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Citate Di Ravello ");
-			return true;
-			}
-		
-		if(Math.Abs(verticalshort - 200380) <= toleranceVertical && Math.Abs(horizontalshort - 200996) <= toleranceHorizontal && Math.Abs(heightshort - 1238) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Burgoletto ");
-			return true;
-			}	
-			
-		if(Math.Abs(verticalshort - 200684) <= toleranceVertical && Math.Abs(horizontalshort - 200502) <= toleranceHorizontal && Math.Abs(heightshort - 1033) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Celata ");
-			return true;
-			}	
-			
-		if(Math.Abs(verticalshort - 200687) <= toleranceVertical && Math.Abs(horizontalshort - 199560) <= toleranceHorizontal && Math.Abs(heightshort - 1926) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Vista Dracon ");
-			return true;
-			}	
-			
-		if(Math.Abs(verticalshort - 200089) <= toleranceVertical && Math.Abs(horizontalshort - 199542) <= toleranceHorizontal && Math.Abs(heightshort - 1038) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Nacre ");
-			return true;
-			}
+        if(vars.firststarted){
+            print(" -------------------- JC3 Splitter Active -------------------- ");
+            vars.firststarted = false;
+        }
 
-		if(Math.Abs(verticalshort - 198349) <= toleranceVertical && Math.Abs(horizontalshort - 199409) <= toleranceHorizontal && Math.Abs(heightshort - 1030) <= toleranceHeight){
-			vars.lastSplit = Environment.TickCount;
-			print(" JC3 - Town: Vico Platessa ");
-			return true;
-			}
-			
-		// Checks when the flag animation starts
-		// Old way as it didnt work for everyone
-		if(old.town < current.town){
-			print(" «[JC3 - Town: " + current.town + "]» ");
-			vars.lastSplit = Environment.TickCount;
-			return true;
-			}
-	}
-	
-		// Checks if the value of outposts changes
-	if(old.outposts != current.outposts){
-		print(" «[JC3 - Outposts: " + current.outposts + "]» ");
-		
-		// Checks if the value of outposts changed because of a church and if so it prevents splitting
-		if((current.church == 0)&&(Environment.TickCount - vars.lastSplit > 5000)){
-			print(" «[JC3 - Church: " + current.church + "]» ");
-			vars.lastSplit = Environment.TickCount;
-			return true;
-		}
-	}
+        float verticalshort = (float)Math.Truncate((current.vertical)*100);
+        float horizontalshort = (float)Math.Truncate((current.horizontal)*100);
+        float heightshort = (float)Math.Truncate(current.height);
 
-	
-	// Checks if the player left a mission (by completing or exiting it)
-	// And checks if outposts triggert right before it so it doesn't splitt twice
-	if((old.mission > current.mission)&&(Environment.TickCount - vars.lastSplit > 5000)){
-		print(" «[JC3 - Mission: " + current.mission + "]» ");
-		vars.lastSplit = Environment.TickCount;
-		return true;
-	}
-   
-	if((0 < current.challenge)&&(current.challangewheel > old.challangewheel)){
-		print(" «[JC3 - challenge: " + current.challenge + "]» ");
-		return true;
-	}
+        float toleranceVertical = 5;
+        float toleranceHorizontal = 5;
+        float toleranceHeight = 5;
 
-	//Checks if the player collects a tape, a part, a shrine or a tomb it doesn't check for Dardevil jumps
-	//its an value that counts up (but a bit strange)
-    if(old.collectibles != current.collectibles){
-		print(" «[JC3 - Collectibles: " + current.collectibles + "]» ");
-		return true;
+
+        // checks if outposts triggert right before it so it doesn't splitt twice
+        if(current.gamestate == 1 && old.gamestate != current.gamestate && ((Environment.TickCount - vars.lastSplit) > 5000)){
+
+
+            print(" JC3 - Town: ");
+            print(" ------ JC3 vertical " + verticalshort + " ------ ");
+            print(" ------ JC3 horizontal " + horizontalshort + " ------ ");
+            print(" ------ JC3 height " + heightshort + " ------ ");
+
+            if(Math.Abs(verticalshort - 196913) <= toleranceVertical && Math.Abs(horizontalshort - 205049) <= toleranceHorizontal && Math.Abs(heightshort - 1131) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Manaea ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 198189) <= toleranceVertical && Math.Abs(horizontalshort - 204526) <= toleranceHorizontal && Math.Abs(heightshort - 1138) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Surpicco ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 198027) <= toleranceVertical && Math.Abs(horizontalshort - 200802) <= toleranceHorizontal && Math.Abs(heightshort - 1038) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Cinta ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199489) <= toleranceVertical && Math.Abs(horizontalshort - 200371) <= toleranceHorizontal && Math.Abs(heightshort - 1031) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vico Spigola ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 198941) <= toleranceVertical && Math.Abs(horizontalshort - 200516) <= toleranceHorizontal && Math.Abs(heightshort - 1112) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Soliana ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199078) <= toleranceVertical && Math.Abs(horizontalshort - 199834) <= toleranceHorizontal && Math.Abs(heightshort - 1134) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vinialetta ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199592) <= toleranceVertical && Math.Abs(horizontalshort - 199644) <= toleranceHorizontal && Math.Abs(heightshort - 1033) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vico Thunno ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199547) <= toleranceVertical && Math.Abs(horizontalshort - 205301) <= toleranceHorizontal && Math.Abs(heightshort - 1029) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Perla Est ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199171) <= toleranceVertical && Math.Abs(horizontalshort - 202231) <= toleranceHorizontal && Math.Abs(heightshort - 1189) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Agro Nove ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199333) <= toleranceVertical && Math.Abs(horizontalshort - 202468) <= toleranceHorizontal && Math.Abs(heightshort - 1168) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Argo ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199283) <= toleranceVertical && Math.Abs(horizontalshort - 203134) <= toleranceHorizontal && Math.Abs(heightshort - 1059) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vista Fonte ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199240) <= toleranceVertical && Math.Abs(horizontalshort - 204077) <= toleranceHorizontal && Math.Abs(heightshort - 1054) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Bellevia ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 199517) <= toleranceVertical && Math.Abs(horizontalshort - 201219) <= toleranceHorizontal && Math.Abs(heightshort - 1043) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Citate Di Ravello ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 200380) <= toleranceVertical && Math.Abs(horizontalshort - 200996) <= toleranceHorizontal && Math.Abs(heightshort - 1238) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Burgoletto ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 200684) <= toleranceVertical && Math.Abs(horizontalshort - 200502) <= toleranceHorizontal && Math.Abs(heightshort - 1033) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Celata ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 200687) <= toleranceVertical && Math.Abs(horizontalshort - 199560) <= toleranceHorizontal && Math.Abs(heightshort - 1926) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vista Dracon ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 200089) <= toleranceVertical && Math.Abs(horizontalshort - 199542) <= toleranceHorizontal && Math.Abs(heightshort - 1038) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Nacre ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 198349) <= toleranceVertical && Math.Abs(horizontalshort - 199409) <= toleranceHorizontal && Math.Abs(heightshort - 1030) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vico Platessa ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 198573) <= toleranceVertical && Math.Abs(horizontalshort - 199457) <= toleranceHorizontal && Math.Abs(heightshort - 1176) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Arco Sperania ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197840) <= toleranceVertical && Math.Abs(horizontalshort - 199380) <= toleranceHorizontal && Math.Abs(heightshort - 1126) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Ponere ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197691) <= toleranceVertical && Math.Abs(horizontalshort - 199437) <= toleranceHorizontal && Math.Abs(heightshort - 1028) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vico Gamba ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197764) <= toleranceVertical && Math.Abs(horizontalshort - 199808) <= toleranceHorizontal && Math.Abs(heightshort - 1034) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vico Maqurello ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197717) <= toleranceVertical && Math.Abs(horizontalshort - 200268) <= toleranceHorizontal && Math.Abs(heightshort - 1227) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Olivo Moro ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197573) <= toleranceVertical && Math.Abs(horizontalshort - 200320) <= toleranceHorizontal && Math.Abs(heightshort - 1035) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Vico Tructa ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 198545) <= toleranceVertical && Math.Abs(horizontalshort - 203805) <= toleranceHorizontal && Math.Abs(heightshort - 1030) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Babica ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 198185) <= toleranceVertical && Math.Abs(horizontalshort - 203267) <= toleranceHorizontal && Math.Abs(heightshort - 1075) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Alberto Pero ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197839) <= toleranceVertical && Math.Abs(horizontalshort - 203079) <= toleranceHorizontal && Math.Abs(heightshort - 1164) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Rondella ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197740) <= toleranceVertical && Math.Abs(horizontalshort - 203452) <= toleranceHorizontal && Math.Abs(heightshort - 1086) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Lantuina ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 197040) <= toleranceVertical && Math.Abs(horizontalshort - 204501) <= toleranceHorizontal && Math.Abs(heightshort - 1266) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Fortalessa ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 196824) <= toleranceVertical && Math.Abs(horizontalshort - 204060) <= toleranceHorizontal && Math.Abs(heightshort - 1239) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Alba ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 196463) <= toleranceVertical && Math.Abs(horizontalshort - 203674) <= toleranceHorizontal && Math.Abs(heightshort - 1086) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town:  Colle Salrosa");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 195833) <= toleranceVertical && Math.Abs(horizontalshort - 203797) <= toleranceHorizontal && Math.Abs(heightshort - 1057) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Costa Del Porto ");
+                return true;
+            }
+
+
+            // Checks when the flag animation starts
+            // Old way as it didnt work for everyone
+            //if(old.town < current.town){
+            //    print(" «[JC3 - Town: " + current.town + "]» ");
+            //    vars.lastSplit = Environment.TickCount;
+            //    return true;
+            //    }
+        }
+
+            // Checks if the value of outposts changes
+        if(old.outposts != current.outposts){
+            print(" «[JC3 - Outposts: " + current.outposts + "]» ");
+
+            // Checks if the value of outposts changed because of a church and if so it prevents splitting
+            if((current.church == 0)&&(Environment.TickCount - vars.lastSplit > 5000)){
+                print(" «[JC3 - Church: " + current.church + "]» ");
+                vars.lastSplit = Environment.TickCount;
+                return true;
+            }
+        }
+
+
+
+        // Checks if the player left a mission (by completing or exiting it)
+        // And checks if outposts triggert right before it so it doesn't splitt twice
+        if((old.mission > current.mission)&&(Environment.TickCount - vars.lastSplit > 5000)){
+            print(" «[JC3 - Mission: " + current.mission + "]» ");
+            vars.lastSplit = Environment.TickCount;
+            return true;
+        }
+
+        if((0 < current.challenge)&&(current.challangewheel > old.challangewheel)){
+            print(" «[JC3 - challenge: " + current.challenge + "]» ");
+            return true;
+        }
+
+        //Checks if the player collects a tape, a part, a shrine or a tomb it doesn't check for Dardevil jumps
+        //its an value that counts up (but a bit strange)
+        if(old.collectibles != current.collectibles){
+            print(" «[JC3 - Collectibles: " + current.collectibles + "]» ");
+            return true;
+        }
     }
-	
 }
 
 exit{
@@ -214,15 +307,17 @@ exit{
 init{
 	
 	print(" -------------------- JC3 Starting Game -------------------- ");
-	print(" -------------------- JC3 Autosplitter Inactive -------------------- ");
+	print(" -------------------- JC3 Splitter Inactive -------------------- ");
 	vars.gameStart = Environment.TickCount;
 	vars.startcount = 0;
 	vars.lastSplit = Environment.TickCount;
 	vars.firststarted = true;
 
-	if (timer.CurrentTime.RealTime < TimeSpan.FromSeconds(10)){
-		timer.IsGameTimePaused = false;
-	}
+	//if (timer.CurrentTime.RealTime < TimeSpan.FromSeconds(10)){
+	//	timer.IsGameTimePaused = false;
+	//}
+
+
 }
 
 update{
@@ -231,16 +326,17 @@ update{
 	if(current.gameloading != old.gameloading){
 		print(" Game Loading ");
 	}
-	if(Environment.TickCount - vars.gameStart < 10000){
-		return false;
-	}
+
+	//if(Environment.TickCount - vars.gameStart < 10000){
+	//	return false;
+	//}
+
+	//if((Environment.TickCount - vars.gameStart > 10000)&&(Environment.TickCount - vars.gameStart < 10100)){
+	//	print(" -------------------- JC3 Autosplitter Active -------------------- ");
+	//}
 	
-	if((Environment.TickCount - vars.gameStart > 10000)&&(Environment.TickCount - vars.gameStart < 10100)){
-		print(" -------------------- JC3 Autosplitter Active -------------------- ");
-	}
-	
-	current.vertical = current.vertical + 1000;
-	current.horizontal = current.horizontal + 1000;
+	current.vertical = current.vertical + 2000;
+	current.horizontal = current.horizontal + 2000;
 
 }
 
