@@ -252,6 +252,26 @@ split{
                 return true;
             }
 
+            if(Math.Abs(verticalshort - 195574) <= toleranceVertical && Math.Abs(horizontalshort - 203685) <= toleranceHorizontal && Math.Abs(heightshort - 1031) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Costa Di Ravello ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 195311) <= toleranceVertical && Math.Abs(horizontalshort - 203670) <= toleranceHorizontal && Math.Abs(heightshort - 1044) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Laguna Del Sol ");
+                return true;
+            }
+
+            if(Math.Abs(verticalshort - 195172) <= toleranceVertical && Math.Abs(horizontalshort - 203473) <= toleranceHorizontal && Math.Abs(heightshort - 1034) <= toleranceHeight){
+                vars.lastSplit = Environment.TickCount;
+                print(" JC3 - Town: Cirilla ");
+                return true;
+            }
+
+
+
 
             // Checks when the flag animation starts
             // Old way as it didnt work for everyone
