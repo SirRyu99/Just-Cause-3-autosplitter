@@ -16,13 +16,16 @@ state("JustCause3")
 	int challangewheel : 0x02F387F0, 0x100, 0x10, 0x168, 0x14;
 	int collectibles : "fmod_studio_F.dll", 0x004F2670, 0xA0, 0x18, 0x18, 0x28, 0x48, 0x28, 0x50, 0x10, 0x108; //first change of number then increase by 1 or 2
 	int church : "fmod_studio_F.dll", 0x004F2670, 0x118, 0xAF4;
+
 	int town : 0x02F34280, 0x28, 0x70, 0x8, 0x28, 0x60, 0x18, 0x1238, 0x108; //3=true 0=false
 	int gamestate : 0x02F38820 , 0x184; //6== 5==Menu 2==Loading 1==Cutcene
+
 
 	float vertical : 0x02ED6FC0, 0x8C;
 	float horizontal : 0x02ED6FC0, 0x88;
 	float height : 0x2EF5398;
-	
+
+	// maybe new town pointer 0x02F163C8, 0x18, 0xC0, 0xE94;
 	
 }
 
@@ -172,7 +175,6 @@ split{
 			return true;
 		}
 	}
-	
 
 	
 	// Checks if the player left a mission (by completing or exiting it)
@@ -238,6 +240,7 @@ update{
 
 reset{
 	// Reset condition based on specific horizontal, height, and vertical coordinates
+
 	if(current.gamestate == 2 && current.horizontal > 46.74738310 && current.horizontal < 46.74738314 && current.height < 1342 && current.height > 1336 && current.vertical < -28 && current.vertical > -30){
 		//print(" -------------------- JC3 reset " + current.vertical + " -------------------- ");
 		//print(" -------------------- JC3 reset " + current.height + " -------------------- ");
@@ -265,4 +268,3 @@ isLoading{
 		return true;
 	}
 }
-
