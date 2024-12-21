@@ -18,7 +18,7 @@ state("JustCause3")
 	int church : "fmod_studio_F.dll", 0x004F2670, 0x118, 0xAF4;
 
 	int town : 0x02F34280, 0x28, 0x70, 0x8, 0x28, 0x60, 0x18, 0x1238, 0x108; //3=true 0=false
-	int gamestate : 0x02F38820 , 0x184; //6== 5==Menu 2==Loading 1==Cutcene
+	int gamestate : 0x02F38820 , 0x184; //6==Endcard Liberatet Card 5==Menu 4==FirstMission 3==Challange 2==Loading 1==Cutcene 0==Freeroam
 
 
 	float vertical : 0x02ED6FC0, 0x8C;
