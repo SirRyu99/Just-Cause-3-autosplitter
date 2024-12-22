@@ -42,8 +42,8 @@ split{
             vars.firststarted = false;
         }
 
-        float verticalshort = (float)Math.Truncate((current.vertical)*100);
-        float horizontalshort = (float)Math.Truncate((current.horizontal)*100);
+        float verticalshort = (float)Math.Truncate((current.vertical+2000)*100);
+        float horizontalshort = (float)Math.Truncate((current.horizontal+2000)*100);
         float heightshort = (float)Math.Truncate(current.height);
 
         float toleranceVertical = 5;
@@ -355,8 +355,6 @@ update{
 	//	print(" -------------------- JC3 Autosplitter Active -------------------- ");
 	//}
 	
-	current.vertical = current.vertical + 2000;
-	current.horizontal = current.horizontal + 2000;
 
 }
 
