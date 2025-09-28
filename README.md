@@ -19,6 +19,10 @@ These steps should enable the JC3-Autosplitter for you.
 !!!IMPORTANT!!!
 Do not perform both actions! Otherwise, it will split twice on every split.
 
+## Splits
+- You can find already preconfiguerd autospitt files (.lsl) on the just cause 3 speedrun page
+- https://www.speedrun.com/jc3/resources
+
 ## Additional options:
 
 - If you want to compare to game time, right-click on the timer and choose "Compare Against," then select "Real time."
