@@ -22,6 +22,7 @@ Do not perform both actions! If you do, the autosplitter will trigger twice on e
 ## Splits
 - Pre-configured split files (.lsl) are available on the Just Cause 3 speedrun page. These files include split times for various routes I've run, such as Any% or 100%, and are ready to use with the autosplitter.
 - https://www.speedrun.com/jc3/resources
+- Note: For reference, the autosplitter only triggers based on changes or events in the game. It doesn’t care about the splits themselves, so feel free to create your own splits or edit mine as you like.
 
 ## Additional options:
 
