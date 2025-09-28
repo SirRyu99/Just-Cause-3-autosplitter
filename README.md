@@ -16,8 +16,8 @@ Either go to your splits in LiveSplit and just click "activate", or if you want 
 
 These steps should enable the JC3-Autosplitter for you.
 
-!!!IMPORTANT!!!
-Do not perform both actions! Otherwise, it will split twice on every split.
+### **!!!IMPORTANT!!!**
+Do not perform both actions! If you do, the autosplitter will trigger twice on every split, as two instances of the autosplitter will be running simultaneously.
 
 ## Splits
 - Pre-configured split files (.lsl) are available on the Just Cause 3 speedrun page. These files include split times for various routes I've run, such as Any% or 100%, and are ready to use with the autosplitter.
