@@ -45,7 +45,7 @@ Do not perform both actions! If you do, the autosplitter will trigger twice on e
 
 ## Currently known bugs:
 
-- As mentioned before, the bug where it will split while you discover Sancte Esteban. That’s the monastery very close to the town Rondella. All other churches are disabled. Probably only interesting for 100% runs. I probably will not fix this, so you should include a split like “discovering Sancte Esteban” into your splits.
+- As mentioned before, the bug where it will split while you discover Sancte Esteban. That’s the monastery very close to the town Rondella. All other churches are disabled. Most likely only relevant for 100% runs. I probably won’t be fixing this, so you should consider adding a split like "Discovering Sancte Esteban" to your own splits.
 
 ## On the to-do list (maybe):
 
