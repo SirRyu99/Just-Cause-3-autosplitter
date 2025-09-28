@@ -20,7 +20,7 @@ These steps should enable the JC3-Autosplitter for you.
 Do not perform both actions! Otherwise, it will split twice on every split.
 
 ## Splits
-- You can find already preconfiguerd autospitt files (.lsl) on the just cause 3 speedrun page
+- Pre-configured split files (.lsl) are available on the Just Cause 3 speedrun page. These files include split times for various routes I've run, such as Any% or 100%, and are ready to use with the autosplitter.
 - https://www.speedrun.com/jc3/resources
 
 ## Additional options:
